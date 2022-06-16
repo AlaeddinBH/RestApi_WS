@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(
+      90deg,
+      rgb(236, 236, 237) 0%,
+      rgb(176, 176, 178) 100%
+    );
+  }
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+    min-height: 600px;
+    background: #627c88;
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+  }
+  
+  h1 {
+    margin: 32px 30px;
+    color: rgb(20, 19, 19);
+    font-size: 24px;
+  }
+  
+  
+  
+  .App-form {
+    margin-bottom: 20px;
+  }
+
+  .Form-add{
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+  
+  .App-input {
+    margin-top: 10px;
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px;
+    border: 2px solid #d49278;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: rgb(0, 0, 0);
+  }
+  
+  .App-input::placeholder {
+    color: #000000;
+  }
+  
+  .App-button {
+    margin-left: 10px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      rgb(245, 185, 116) 0%,
+      rgb(207, 136, 79) 100%
+    );
+    color: #fff;
+    text-transform: capitalize;
+  }
+  
+  .App-input.edit {
+    border: 2px solid #fab86c;
+  }
+  
+  .App-button.edit {
+    background: linear-gradient(
+      90deg,
+      rgb(245, 185, 116) 0%,
+      rgb(207, 136, 79) 100%
+    );
+    padding: 16px 22px;
+  }
+  
+  .App-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .App-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #fff;
+    background: linear-gradient(
+      90deg,
+      rgb(53, 85, 150) 0%,
+      rgb(149, 168, 249) 100%
+    );
+  
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+  }
+  .App-title {
+    display: grid;
+    gap: 40px 10px;
+    grid-template-columns: auto auto auto auto;
+    color: #fff;
+    background: none;
+    padding: 5px;
+    border-radius: 5px;
+    width: 90%;
+  }
+  
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    cursor: pointer;
+  }
+  
+  .delete-icon {
+    width: 75px;
+    /* margin-right: 5px; */
+    color: #fff;
+  }
+  
+  .edit-icon {
+    width: 75px;
+    color: #fff;
+  } 

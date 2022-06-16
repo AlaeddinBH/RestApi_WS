@@ -17,13 +17,13 @@ connect();
 app.post('/add', async (req, res) => {
     const {fullName,email,phone} = req.body; 
     try {
-        const newUser = new User({
+        const newContact = new User({
             fullName,
             email,
             phone
         }) 
-        await newUser.save();
-        res.send(newUser);
+        await newContact.save();
+        res.send(newContact);
     } catch (error) {
         console.log(error);
     }
@@ -44,8 +44,8 @@ app.get('/get', async (req, res) => {
 
 app.put('/update/:id', async (req, res) => {
     try {
-        const editedUser = await User.findByIdAndUpdate(req.params.id, {...req.body}, {new: true});
-        res.send(editedUser);
+        const editedContact = await User.findByIdAndUpdate(req.params.id, {...req.body}, {new: true});
+        res.send(editedContact);
     } catch (error) {
         console.log(error);
     }
